@@ -265,8 +265,8 @@ public class GameFactory {
 	public static void main(String args[]) {
 		
 		GameFactory gameFactory = new GameFactory();
-		String inputArray[] = {"Massimo","Anna"};
-		List<String> players = Arrays.asList(inputArray);
+		//String inputArray[] = {"Massimo","Anna"};
+		List<String> players = Arrays.asList(args);
 		
 		//add players to the gamefactory
 		gameFactory.addPartecipants(players);
