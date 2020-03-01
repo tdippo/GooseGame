@@ -258,7 +258,7 @@ public class GameFactory {
 
 	/**
 	 * 
-	 * Simulation of a game with two players
+	 * Simulation of a game with two players: example of call: java game.GameFactory Massimo Anna
 	 * 
 	 * @param args input players as array of string
 	 */
