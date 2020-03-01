@@ -245,7 +245,7 @@ public class GameFactory {
 	public void playGame(List<Player> partecipants) {
 		
 		//throws the dice foreach partecipant till the game is ended
-		while (!isEndGame()) {
+		while (!isEndGame()&&partecipants.size()>0) {
 			for (Player player : partecipants) {
 				movePlayer(throwsDice(player));
 				if (isWinner(player)) {
@@ -274,8 +274,10 @@ public class GameFactory {
 		//start of the game
 		List<Player> partecipants = gameFactory.getPartecipants();
 		
-		//play game
-		gameFactory.playGame(partecipants);
+		//play game only if at least two partecipants are added
+		if (partecipants.size()>1) {
+			gameFactory.playGame(partecipants);
+		}
 		
 	}
 }
